@@ -1,0 +1,5 @@
+backend/.env
+backend/data/
+backend/node_modules/
+android/.gradle/
+android/**/build/

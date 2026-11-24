@@ -1,0 +1,30 @@
+* { box-sizing: border-box; }
+body { width: 310px; margin: 0; color: #292e3a; background: #f8f7f2; font: 13px/1.4 "Segoe UI", sans-serif; }
+button, input { font: inherit; }
+.popup { padding: 18px 19px 14px; }
+.header { display: flex; align-items: center; gap: 9px; padding-bottom: 17px; border-bottom: 1px solid #e8e6df; }
+.mark { width: 34px; height: 34px; display: grid; place-items: center; border: 1px solid #d5d8e7; border-radius: 11px; background: #fffefa; transform: rotate(-4deg); }
+.mark svg { width: 26px; height: 26px; fill: none; stroke: #4e63d7; stroke-width: 2.2; stroke-linecap: round; stroke-linejoin: round; }
+.header div { display: grid; gap: 1px; }
+.header strong { font: 800 17px/1 "Trebuchet MS", sans-serif; letter-spacing: -.6px; }
+.header strong span { color: #4e63d7; }
+.header small { color: #8c9098; font-size: 10px; }
+form { padding-top: 17px; }
+label { display: block; margin-bottom: 7px; color: #747985; font-size: 11px; font-weight: 600; }
+input { width: 100%; height: 44px; padding: 0 12px; border: 1px solid #e2e1da; border-radius: 9px; color: #292e3a; background: #fffefa; }
+#code { font: 700 20px/1 "Trebuchet MS", sans-serif; letter-spacing: 4px; }
+input::placeholder { color: #c9c9c4; }
+input:focus-visible { outline: 3px solid #b9c2ff; outline-offset: 1px; border-color: #8493ea; }
+form button { width: 100%; height: 42px; display: flex; align-items: center; justify-content: center; gap: 10px; margin-top: 10px; border: 0; border-radius: 9px; color: #fff; background: #4e63d7; font-size: 11px; font-weight: 700; cursor: pointer; }
+form button:hover { background: #394dbf; }
+form button svg { width: 17px; height: 17px; fill: none; stroke: currentColor; stroke-width: 1.6; stroke-linecap: round; stroke-linejoin: round; }
+.show-qr { width: 100%; min-height: 36px; margin-top: 8px; border: 1px solid #e2e1da; border-radius: 9px; color: #4e5fc2; background: #fffefa; font-size: 10px; font-weight: 650; cursor: pointer; }
+.show-qr:hover { border-color: #aab4ef; background: #f6f7ff; }
+.status { min-height: 28px; padding: 10px 1px 8px; color: #8b9099; font-size: 10px; }
+.status.error { color: #b45346; }
+details { padding: 11px 0 7px; border-top: 1px solid #e8e6df; }
+summary { color: #7b818b; font-size: 10px; cursor: pointer; }
+.url-label { margin-top: 11px; font-size: 10px; }
+#app-url { height: 37px; font-size: 10px; }
+.save-url { margin-top: 7px; padding: 6px 0; border: 0; color: #4e63d7; background: transparent; font-size: 10px; font-weight: 700; cursor: pointer; }
+footer { padding-top: 9px; color: #a0a3aa; font-size: 9px; line-height: 1.55; }

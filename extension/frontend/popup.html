@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>LinkDrop</title>
+    <link rel="stylesheet" href="popup.css">
+  </head>
+  <body>
+    <main class="popup">
+      <header class="header">
+        <span class="mark" aria-hidden="true"><svg viewBox="0 0 40 40"><path d="M14.2 24.7 11 27.9a6 6 0 0 1-8.5-8.5l7.1-7.1a6 6 0 0 1 8.5 0m5.8 10.4 3.2-3.2a6 6 0 0 1 8.5 8.5l-7.1 7.1a6 6 0 0 1-8.5 0m-6.4-.8 13.2-13.2"/></svg></span>
+        <div><strong>linkdrop<span>.</span></strong><small>phone ↔ laptop</small></div>
+      </header>
+
+      <form id="connect-form">
+        <label for="code">Code from your phone</label>
+        <input id="code" name="code" inputmode="numeric" autocomplete="one-time-code" maxlength="6" placeholder="000000" required aria-describedby="status">
+        <button type="submit"><span>Connect this laptop</span><svg viewBox="0 0 20 20" aria-hidden="true"><path d="M3 10h13m-5-5 5 5-5 5"/></svg></button>
+      </form>
+
+      <button class="show-qr" id="show-qr" type="button">Show QR to open on phone</button>
+
+      <div class="status" id="status" role="status" aria-live="polite">Your phone’s code works for 24 hours.</div>
+      <details>
+        <summary>Sharing service address</summary>
+        <label class="url-label" for="app-url">LinkDrop address</label>
+        <input id="app-url" type="url" spellcheck="false" placeholder="http://localhost:3000">
+        <button class="save-url" id="save-url" type="button">Save address</button>
+      </details>
+      <footer>Files travel through your LinkDrop service.<br>No account or cable needed.</footer>
+    </main>
+    <script type="module" src="popup.js"></script>
+  </body>
+</html>

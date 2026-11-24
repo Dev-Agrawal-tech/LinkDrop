@@ -1,0 +1,5 @@
+<resources>
+    <!-- For a physical phone, change this to the laptop's LAN URL during development.
+         For a Play Store build, use your deployed HTTPS service address. -->
+    <string name="service_url">http://10.0.2.2:3000</string>
+</resources>
